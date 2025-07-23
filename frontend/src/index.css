@@ -1,0 +1,22 @@
+/* Ensure this is imported in main.jsx AFTER bootstrap.min.css */
+
+/* Custom styles for MovieSearch cards */
+.card.transition-transform {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card.transition-transform:hover {
+  transform: translateY(-5px) scale(1.02); /* Lifts and slightly scales the card */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Larger shadow on hover */
+}
+
+/* Optional: Adjust Link default styling if needed */
+a {
+  text-decoration: none; /* Remove underline from all links by default */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* You might want to adjust the body font for a nicer look */
+body {
+  font-family: 'Inter', sans-serif; /* Example: using Inter font */
+}

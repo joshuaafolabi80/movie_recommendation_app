@@ -1,0 +1,24 @@
+{
+      "name": "movie-recommendation-app",
+      "version": "1.0.0",
+      "description": "A movie recommendation application with React frontend and Node.js backend.",
+      "main": "index.js",
+      "scripts": {
+            "start": "concurrently \"npm start --prefix backend\" \"npm run dev --prefix frontend\"",
+            "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+            "build-frontend": "npm run build --prefix frontend"
+      },
+      "keywords": [
+            "movie",
+            "recommendation",
+            "react",
+            "node",
+            "express",
+            "mongodb"
+      ],
+      "author": "Gbenga Joshua Afolabi",
+      "license": "ISC",
+      "devDependencies": {
+            "concurrently": "^8.2.2"
+      }
+}
