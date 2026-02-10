@@ -80,13 +80,6 @@ The application provides the following functionalities:
 ### External API
 * The Movie Database (TMDB) API for movie data
 
-### Deployment
-* Frontend: Netlify
-* Backend: Render
-* CI/CD: Automated deployments via GitHub integration
-
------
-
 ## Project Structure
 The project is organized into two main directories:
 
@@ -122,96 +115,8 @@ The project is organized into two main directories:
 
 -----
 
-## How to Run Locally
-To get the Movie Recommendation App running on your local machine:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone YOUR_GITHUB_REPO_URL
-   cd movie-recommendation-app
-   ```
-
-2. **Create .env Files**:
-   * `backend/.env`:
-     ```
-     PORT=5000
-     MONGO_URI=mongodb://localhost:27017/movierecommendation
-     JWT_SECRET=YOUR_GENERATED_JWT_SECRET
-     TMDB_API_KEY=YOUR_TMDB_API_KEY
-     ```
-   * `frontend/.env`:
-     ```
-     VITE_BACKEND_URL=http://localhost:5000
-     ```
-
-3. **Install Dependencies**:
-   ```bash
-   npm install concurrently
-   npm run install-all
-   ```
-
-4. **Start the Application**:
-   ```bash
-   npm start
-   ```
-
-5. **Access the App**:
-   Open your browser to `http://localhost:5173/`
-
------
-
-## Live Application
-* **Backend API**: [Your Render Backend URL Here]
-* **Frontend App**: [Your Netlify Frontend URL Here]
-
------
-
-## API Testing with Postman
-Key Endpoints Tested:
-
-1. **User Login** (POST /api/auth/login)
-   ```json
-   {
-     "email": "user@example.com",
-     "password": "password123"
-   }
-   ```
-
-2. **Add Favorite Movie** (POST /api/users/favorites)
-   ```json
-   {
-     "movieId": 550,
-     "title": "Fight Club",
-     "poster_path": "/pB8BM7pdXLXbZHQPHnjpDVsWfdJ.jpg",
-     "release_date": "1999-10-15"
-   }
-   ```
-
-3. **Get Recommendations** (GET /api/users/recommendations)
-
------
-
-## Future Enhancements (Stretch Goals)
-* Social features (follow other users, share lists)
-* Advanced recommendation algorithm
-* Movie trailer integration
-* PWA implementation
-
------
-
 ## Acknowledgements
 * The Movie Database (TMDB) for their comprehensive API
 * React, Node.js, Express, MongoDB communities
-* Render & Netlify for excellent deployment platforms
+* Github
 ```
-
-This formatted version includes:
-- Proper heading hierarchy (#, ##, ###)
-- Lists with bullet points (*)
-- Code blocks with syntax highlighting
-- Horizontal rules (-----) for visual separation
-- Consistent spacing and formatting
-- Clickable table of contents links
-- Proper emphasis for important notes
-- Clean, readable structure throughout
-- All technical details preserved exactly as in your original content
